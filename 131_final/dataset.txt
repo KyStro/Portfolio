@@ -1,0 +1,8 @@
+https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data#spreadspoke_scores.csv 
+
+
+Graph1: Winning pct per team
+
+Graph2: Year vs total average points per game (regression)
+
+Graph3: vegas odds predict (T/F) vs #of t/f predictions
