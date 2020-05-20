@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<title>Jack & Jill</title>
+<style>
+body{
+        background-color: black;
+
+}
+p{      color: white;
+}
+</style>
+</head>
+<body>
+<p>Jack and Jill need you help to get up a hill.<br>
+See how many times you can test your luck going up the hill<br>
+without <span style="color:red">dying</span>.</p>
+<p>Click button to start!</p>
+
+<form action='/cgi-bin/s2.py' method=get>
+<input type=hidden value=10 name=hp_jack>
+
+<input type=hidden value=10 name=hp_jill>
+<input type=hidden value=0 name=wins>
+<input type=submit value='Start Game'>
+
+</form>
+</body>
+</html>
