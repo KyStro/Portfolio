@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.rep {
+	background-color: #A0E5EB;
+	height: 600px;
+	width: 250px;
+	padding: 15px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: gray;
+}
+
+.print {
+	background-color: #ffa0a8;
+	height: 250px;
+	width: 450px;
+	padding: 20px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: red;
+}
+
+.block {
+	display: inline-block;
+	text-align: right;
+}
