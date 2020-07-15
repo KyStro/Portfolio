@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome - {{ username }}</title>
+</head>
+<body>
+<h1>Welcome {{ username }}!</h1>
+<hr>
+<form method='POST'><br>
+	<input type=hidden name='username' value={{ username }}>
+	<input name='profolio'>&nbsp<input type='submit'value='+ New Profolio'>
+</form><br>
+<hr>
+Click on your of your profolios below to buy stocks:
+<br><br>
+{% if not there %}
+<b>You currently have no profolios</b>
+{% else %}
+	{% for i in there %}
+	<a href='/flask_simple/{{ username }}/profolio/{{ i[0] }}'>{{ i[0] }}</a><br>
+	{% endfor %}
+{% endif %}
+</body>
+</html>

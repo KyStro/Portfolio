@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Profolio - {{name}}</title>
+</head>
+<body>
+	<a href='http://ec2-3-92-181-253.compute-1.amazonaws.com/flask_simple/login/{{username}}'>
+        Go to profolios </a>
+	<h2>{{name}}</h2>
+	<h3>Stocks in this profolio:</h3>
+	<table>
+		<tr><th>stock</th><th>price</th>
+                {% for i in own  %}
+                <tr><td>{{ i[0] }}</td><td>{{ i[1] }}</td></tr>
+                {% endfor  %}
+	</table>
+<hr>
+	<h2>Available Stock</h2>
+	<h3>Enter the ticker symbol for a stock below to add to your profolio:</h3><br>
+	<form method='POST'>
+		<input name='stock'>&nbsp
+		<input type='submit' value='Buy'>
+	</form>
+	<br>
+        <table>
+                <tr><th>stock</th><th>price</th>
+		{% for i in records  %}
+		<tr><td>{{ i[0] }}</td><td>{{ i[1] }}</td></tr>
+		{% endfor  %}
+        </table>
+
+	<br><br>
+	<a href='http://ec2-3-92-181-253.compute-1.amazonaws.com/flask_simple/login/{{username}}'>
+	Go to profolios </a>
